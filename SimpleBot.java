@@ -38,7 +38,8 @@ public class SimpleBot {
         System.out.println("4. To interrupt the execution of a program.");
         int an = scanner.nextInt();
         int ans = an;
-        for (; ans == 1 || ans == 3 || ans == 4; System.out.println("Please, try again.")) {
+        for (; ans == 1 || ans == 3 || ans == 4;) {
+            System.out.println("Please, try again.");
             int new1 = scanner.nextInt();
             ans = new1;
         } if (ans == 2) {
